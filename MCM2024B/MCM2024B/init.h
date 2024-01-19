@@ -1,9 +1,9 @@
 #pragma once
 #include "base.h"
-
+#include "dijkstra.h"
 vector<Point> initvertices() {
     vector<Point> res;
-    std::ifstream file("Case1-vertex.csv");
+    std::ifstream file("Case0-vertex.csv");
     // 逐行读取 CSV 文件
     string line;
     getline(file, line);
@@ -26,9 +26,8 @@ vector<Point> initvertices() {
     file.close();
     return res;
 }
-vector<Edge> initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map) {
-    vector<Edge> res;
-    ifstream file("Case1-edge.csv");
+void initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* edges) {
+    ifstream file("Case0-edge.csv");
     string line;
     getline(file, line);
     while (getline(file, line)) {
@@ -40,34 +39,41 @@ vector<Edge> initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map) {
         }
         Edge tmp(stoi(row[0]), stoi(row[1]), stod(row[2]));
         // 将当前行添加到数据向量中
-        res.push_back(tmp);
+        edges[stoi(row[0])].push_back(tmp);
         map[{stoi(row[0]), stoi(row[1])}] = tmp;
     }
 
     file.close();
-    return res;
 }
-
-void initpath(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* paths, vector<pair<int, int>>& pathse) {
-    ifstream file("Case1-path.txt");
+int numv;
+double SIM(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* paths, vector<Edge>* edges) {
+    ifstream file("Case0-path.txt");
     string line;
+    int simcnt = 0, cnt = 0;
 
     while (getline(file, line)) {
+        int pathlength = 0;
+        int minlength = 0;
         stringstream ss(line);
-
-        pair<int, int> tmp;
-        tmp.first = stoi(line.substr(1));
-        tmp.second = stoi(line.substr(line.find_last_of(' ')));
-
+        int s = stoi(line.substr(1)), t = stoi(line.substr(line.find_last_of(' ')));
+        //pair<int, int> tmp;
+        //tmp.first = stoi(line.substr(1));
+        //tmp.second = stoi(line.substr(line.find_last_of(' ')));
+        minlength = dijkstra(s, t, numv, edges);
         char discard;
         int start, end;
 
         while (ss >> discard >> start >> discard >> end >> discard >> discard) {
-            pathse.push_back(tmp);
-            paths[start].push_back(map[{start, end}]);
-            break;
+            //pathse.push_back(tmp);
+            //paths[start].push_back(map[{start, end}]);
+            pathlength += map[{start, end}].weight;
         }
+        pathlength += map[{start, end}].weight;
+        if (pathlength == minlength) 
+            simcnt++;
+        cnt++;
     }
 
     file.close();
+    return 1.0 * simcnt / cnt;
 }

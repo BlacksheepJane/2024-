@@ -1,7 +1,10 @@
 #include<vector>
+#include <fstream>
 #include <queue>
 #include<iostream>
 #include<cstring> 
+#include<iostream>
+#include <sstream>
 using namespace std;
 const int maxV = 40000,maxE=100000,maxD=100000;
 vector <int>p;
@@ -53,20 +56,12 @@ int djkstra(int s, int t)//D(s,t)
 	
 }
 int main() {
-	int n;
-	cin>>n;
-	numv = n;
-	int m;
-	cin >> m;
-	memset(first, 0, sizeof(first));
-	while (m--)
-	{
-		int f, r, l;
-		cin >> f >> r >> l;
-		add_edge(f, r, l);
+	ifstream file("Case1-path.txt");
+	string line;
+	int n = 0;
+	while (getline(file, line)) {
+		n++;
 	}
-	/*for (int i = 1; i <= n; i++)
-		for(int j=1;j<=n;j++)
-	cout << djkstra(i, j);*/
-	cout << djkstra(1, 3);
+	cout << n;
+	return 0;
 }

@@ -1,11 +1,11 @@
 #pragma once
 #include "base.h"
-const int maxV = 40000, maxE = 100000, maxD = 100000;
-void add_edge(int from, int to, double length, vector<Edge>* adj)
+
+inline void add_edge(int from, int to, double length, vector<Edge>* adj)
 {
 	adj[from].push_back(Edge{ from, to, length });
 }
-int dijkstra(int s, int t, int numv, vector<Edge>* adj)//D(s,t)
+inline int dijkstra(int s, int t, int numv, vector<Edge>* adj)//D(s,t)
 {
 	bool visited[maxV];
 	int d[maxV];
