@@ -4,7 +4,9 @@
 #include <sstream>
 #include <vector>
 #include <string>
+#include <unordered_map>
 using namespace std;
+
 struct Point {
     double x;
     double y;
@@ -19,6 +21,19 @@ struct Edge {
     double weight;  // 边的权重，可以根据需要更改数据类型
 
     // 构造函数
+    Edge(){}
     Edge(int start_point, int end_point, double weight_val)
         : start(start_point), end(end_point), weight(weight_val) {}
+};
+
+// 自定义哈希函数
+struct pair_hash {
+    template <class T1, class T2>
+    std::size_t operator () (const std::pair<T1, T2>& p) const {
+        auto h1 = std::hash<T1>{}(p.first);
+        auto h2 = std::hash<T2>{}(p.second);
+
+        // 这里使用异或运算来组合哈希值
+        return h1 ^ h2;
+    }
 };

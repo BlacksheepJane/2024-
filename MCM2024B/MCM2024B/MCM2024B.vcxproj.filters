@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="djkstra.h">
+    <ClCompile Include="dijkstra.h">
       <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>

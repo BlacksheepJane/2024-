@@ -26,9 +26,9 @@ vector<Point> initvertices() {
     file.close();
     return res;
 }
-vector<Edge> initedges() {
+vector<Edge> initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map) {
     vector<Edge> res;
-    ifstream file("Case1-vertex.csv");
+    ifstream file("Case1-edge.csv");
     string line;
     getline(file, line);
     while (getline(file, line)) {
@@ -38,11 +38,36 @@ vector<Edge> initedges() {
         while (getline(ss, value, ',')) {
             row.push_back(value);
         }
-        Edge tmp(stoi(row[1]), stoi(row[2]), stod(row[0]));
+        Edge tmp(stoi(row[0]), stoi(row[1]), stod(row[2]));
         // 将当前行添加到数据向量中
         res.push_back(tmp);
+        map[{stoi(row[0]), stoi(row[1])}] = tmp;
     }
 
     file.close();
     return res;
+}
+
+void initpath(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* paths, vector<pair<int, int>>& pathse) {
+    ifstream file("Case1-path.txt");
+    string line;
+
+    while (getline(file, line)) {
+        stringstream ss(line);
+
+        pair<int, int> tmp;
+        tmp.first = stoi(line.substr(1));
+        tmp.second = stoi(line.substr(line.find_last_of(' ')));
+
+        char discard;
+        int start, end;
+
+        while (ss >> discard >> start >> discard >> end >> discard >> discard) {
+            pathse.push_back(tmp);
+            paths[start].push_back(map[{start, end}]);
+            break;
+        }
+    }
+
+    file.close();
 }
