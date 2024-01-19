@@ -7,6 +7,7 @@ inline void add_edge(int from, int to, double length, vector<Edge>* adj)
 }
 inline int dijkstra(int s, int t, int numv, vector<Edge>* adj)//D(s,t)
 {
+	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
 	bool visited[maxV];
 	int d[maxV];
 	for (int i = 1; i <= numv; i++)
