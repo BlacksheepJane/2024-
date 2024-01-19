@@ -4,7 +4,7 @@
 #include <sstream>
 #include <vector>
 #include <string>
-
+using namespace std;
 struct Point {
     double x;
     double y;
@@ -14,11 +14,11 @@ struct Point {
 };
 
 struct Edge {
-    Point start;
-    Point end;
+    int start;
+    int end;
     double weight;  // 边的权重，可以根据需要更改数据类型
 
     // 构造函数
-    Edge(const Point& start_point, const Point& end_point, double weight_val)
+    Edge(int start_point, int end_point, double weight_val)
         : start(start_point), end(end_point), weight(weight_val) {}
 };
