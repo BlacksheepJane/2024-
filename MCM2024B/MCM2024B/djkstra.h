@@ -1,8 +1,14 @@
 #pragma once
 #include "base.h"
-vector<int>	Edge e[maxE];
-int djkstra(int s, int t, vector<Point>& vertices, vector<Edge>& edges)//D(s,t)
+const int maxV = 40000, maxE = 100000, maxD = 100000;
+void add_edge(int from, int to, int length, vector<Edge>* adj)
 {
+	adj[from].push_back(Edge{ from, to, length });
+}
+int djkstra(int s, int t, int numv, vector<Edge>* adj)//D(s,t)
+{
+	bool visited[maxV];
+	int d[maxV];
 	for (int i = 1; i <= numv; i++)
 		d[i] = maxD;
 	memset(visited, 0, sizeof(visited));
@@ -23,9 +29,11 @@ int djkstra(int s, int t, vector<Point>& vertices, vector<Edge>& edges)//D(s,t)
 		if (now == t)
 			return d[t];
 		visited[now] = 1;
-		for (int i = first[now]; i != 0; i = nxt[i]) {
-			if (d[now] + edges[i].weight < d[edges[i].end])
-				d[edges[i].end] = d[now] + edges[i].weight;
+		for (int i = 0; i < adj[now].size(); i++) {
+			int to = adj[now][i].end;
+			if (d[now] + adj[now][i].weight < d[to])
+				d[to] = d[now] + adj[now][i].weight;
 		}
 	}
+
 }
