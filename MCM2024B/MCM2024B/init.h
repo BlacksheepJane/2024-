@@ -3,7 +3,7 @@
 #include "dijkstra.h"
 vector<Point> initvertices() {
     vector<Point> res;
-    std::ifstream file("Case0-vertex.csv");
+    std::ifstream file("Case1-vertex.csv");
     // 逐行读取 CSV 文件
     string line;
     getline(file, line);
@@ -27,7 +27,7 @@ vector<Point> initvertices() {
     return res;
 }
 void initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* edges) {
-    ifstream file("Case0-edge.csv");
+    ifstream file("Case1-edge.csv");
     string line;
     getline(file, line);
     while (getline(file, line)) {
@@ -47,7 +47,7 @@ void initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>
 }
 int numv;
 double SIM(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* paths, vector<Edge>* edges) {
-    ifstream file("Case0-path.txt");
+    ifstream file("Case1-path.txt");
     string line;
     int simcnt = 0, cnt = 0;
 
