@@ -5,7 +5,7 @@ inline void add_Edge(int from, int to, double length, vector<Edge>* adj)
 {
 	adj[from].push_back(Edge{ from, to, length });
 }
-inline int dijkstra(int s, int t, int numv, vector<Edge>* adj, unordered_map<pair<int, int>, Edge, pair_hash>& map)//D(s,t)
+static int dijkstra(int s, int t, int numv, vector<Edge>* adj, unordered_map<pair<int, int>, Edge, pair_hash>& map)//D(s,t)
 {
 	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
 	int d[maxV];
@@ -41,10 +41,10 @@ inline int dijkstra(int s, int t, int numv, vector<Edge>* adj, unordered_map<pai
 struct pa {
 	double a, b, c;
 };
-double calculate_weight(pa parameters,double pr,double length,double line) {
+inline double calculate_weight(pa parameters,double pr,double length,double line) {
 	double ans = int(parameters.a * pr + parameters.b * length + parameters.c * line);
 }
-double line(pair<int,int> e, vector<Point> v) {
+inline double line(pair<int,int> e, vector<Point>& v) {
 	double x1 = v[e.first].x;
 	double y1 = v[e.first].y;
 	double x2 = v[e.second].x;
@@ -53,12 +53,12 @@ double line(pair<int,int> e, vector<Point> v) {
 	double dx = 85.714 * (x1 - x2);
 	return sqrt(dy * dy + dx * dx);
 }
-void cal_weight(pa now, unordered_map<pair<int, int>, Edge, pair_hash>& weight,unordered_map<pair<int, int>, Edge, pair_hash>& pr, unordered_map<pair<int, int>, Edge, pair_hash>& length, vector<Point> v) {
-	for (auto it : pr) {
+inline void cal_weight(pa now, unordered_map<pair<int, int>, Edge, pair_hash>& weight,unordered_map<pair<int, int>, Edge, pair_hash>& pr, unordered_map<pair<int, int>, Edge, pair_hash>& length, vector<Point>& v) {
+	for (auto& it : pr) {
 		weight[it.first].weight = calculate_weight(now, pr[it.first].weight, length[it.first].weight, line(it.first,v));
 	}
 }
-double update_parameter(double now) {
+inline double update_parameter(double now) {
 	double dnow = rand() % 10000 / 10000-0.5;
 	return now + dnow;
 }
@@ -69,7 +69,7 @@ pa update(pa now) {
 	ans.c = update_parameter(now.c);
 	return ans;
 }
-void Page_Rank(vector<Edge>* adj, vector<Edge>* antiadj, int numv, double* p,double a) {
+static void Page_Rank(vector<Edge>* adj, vector<Edge>* antiadj, int numv, double* p,double a) {
 	vector <Edge>new_Adj[maxV];
 	vector <Edge>new_Antiadj[maxV];
 	for (int i = 0; i < numv; i++) {
@@ -93,7 +93,7 @@ void Page_Rank(vector<Edge>* adj, vector<Edge>* antiadj, int numv, double* p,dou
 			antiadj[i][j] = new_Antiadj[i][j];
 	}
 }
-void output(vector<Edge>* adj,int numv) {
+static void output(vector<Edge>* adj,int numv) {
 	std::ofstream myfile;
 	myfile.open("example.csv");
 	for (int i = 0; i < numv; i++)

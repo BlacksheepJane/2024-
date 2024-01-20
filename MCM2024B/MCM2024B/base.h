@@ -6,10 +6,10 @@
 #include <string>
 #include <unordered_map>
 #include <queue>
-#include<stdlib.h>
-#include<time.h>
-#include<math.h>
-#include<algorithm>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+#include <algorithm>
 using namespace std;
 const int maxV = 40000, maxE = 100000, maxD = 1000000;
 
