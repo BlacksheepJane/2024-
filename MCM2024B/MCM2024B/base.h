@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <queue>
 using namespace std;
-const int maxV = 40000, maxE = 100000, maxD = 100000;
+const int maxV = 40000, maxE = 100000, maxD = 1000000;
 
 struct Point {
     double x;

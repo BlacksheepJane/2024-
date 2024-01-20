@@ -10,7 +10,7 @@ inline int dijkstra(int s, int t, int numv, vector<Edge>* adj)//D(s,t)
 	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;
 	int d[maxV];
 	bool visited[maxV];
-	for (int i = 1; i <= numv; i++)
+	for (int i = 0; i < numv; i++)
 		d[i] = maxD;
 	memset(visited, 0, sizeof(visited));
 	d[s] = 0;
@@ -24,8 +24,6 @@ inline int dijkstra(int s, int t, int numv, vector<Edge>* adj)//D(s,t)
 		int now = x.second, mind = x.first;
 		if (visited[now])
 			continue;
-		if (mind == maxD)
-			return d[t];
 		if (now == t)
 			return d[t];
 		visited[now] = 1;
