@@ -30,6 +30,7 @@ void initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>
     ifstream file("Case1-edge.csv");
     string line;
     getline(file, line);
+    int lastu = 0, lastv = 0, u, v, length;
     while (getline(file, line)) {
         stringstream ss(line);
         vector<string> row;
@@ -37,16 +38,18 @@ void initedges(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>
         while (getline(ss, value, ',')) {
             row.push_back(value);
         }
-        Edge tmp(stoi(row[0]), stoi(row[1]), stod(row[2]));
+        u = stoi(row[0]), v = stoi(row[1]), length = stod(row[2]);
+        if (lastu == u && lastv == v) continue;
+        lastu = u, lastv = v;
+        Edge tmp(u,v,length);
         // 将当前行添加到数据向量中
-        edges[stoi(row[0])].push_back(tmp);
-        map[{stoi(row[0]), stoi(row[1])}] = tmp;
+        edges[u].push_back(tmp);
+        map[{u, v}] = tmp;
     }
-
     file.close();
 }
 void initpr(unordered_map<pair<int, int>, Edge, pair_hash>& prmap) {
-    ifstream file("Case1-pr.csv");
+    ifstream file("pr.csv");
     string line;
     getline(file, line);
     while (getline(file, line)) {
@@ -56,6 +59,7 @@ void initpr(unordered_map<pair<int, int>, Edge, pair_hash>& prmap) {
         while (getline(ss, value, ',')) {
             row.push_back(value);
         }
+
         Edge tmp(stoi(row[0]), stoi(row[1]), stod(row[2]));
         // 将当前行添加到数据向量中
         prmap[{stoi(row[0]), stoi(row[1])}] = tmp;
@@ -66,7 +70,6 @@ void initpr(unordered_map<pair<int, int>, Edge, pair_hash>& prmap) {
 int numv;
 static double SIM(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* edges) {
     ifstream file("path.txt");
-    //file.seekg(3);
     string line;
     int simcnt = 0, cnt = 0, start0 = -1;
     int d[maxV];
@@ -100,13 +103,15 @@ static pa SA(pa now, unordered_map<pair<int, int>, Edge, pair_hash>& pr, unorder
     cal_weight(now, weight, pr, length, v);
     double sim1, sim2, dsim;
     myfile << '\n';
+    cout << now.a << ',' << now.b << ',' << now.c << endl;
     sim1 = SIM(weight, edges);
     myfile << now.a << ',' << now.b << ',' << now.c << ',' << sim1 << '\n';
-    cout << now.a << ',' << now.b << ',' << now.c << ',' << sim1 << ',';
-    double T = 300, T_end = 10;
+    cout << now.a << ',' << now.b << ',' << now.c << ',' << sim1 << '\n';
+    double T = 30, T_end = 1;
     while (T > T_end) {
         pa par = update(now);
         cal_weight(par, weight, pr, length, v);
+        cout << par.a << ',' << par.b << ',' << par.c << endl;
         sim2 = SIM(weight, edges);
 
         dsim = (sim2 - sim1) * 10000;
@@ -121,9 +126,10 @@ static pa SA(pa now, unordered_map<pair<int, int>, Edge, pair_hash>& pr, unorder
                 now = par;
                 sim1 = sim2;
             }
-            else
+            else {
                 myfile << "reject" << '\n';
-            cout << "reject" << '\n';
+                cout << "reject" << '\n';
+            }
         }
         else {
             myfile << "accept" << '\n';
