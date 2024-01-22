@@ -74,8 +74,8 @@ struct pa {
 	double a, b, c;
 };
 inline double calculate_weight(pa parameters, double pr, double length, double line) {
-	double ans = int(parameters.a * 600 / pr + parameters.b * length + parameters.c * line);
-	return ans;
+	double ans = int(parameters.a * 60 / pr + 0.02 * parameters.b * length + 0.05 * parameters.c);
+	return max(1.0,ans);
 }
 inline double line(pair<int, int> e, vector<Point>& v) {
 	double x1 = v[e.first].x;
@@ -92,17 +92,17 @@ inline void cal_weight(pa now, unordered_map<pair<int, int>, Edge, pair_hash>& w
 	}
 }
 inline double update_parameter(double now) {
-	double dnow = ((double)rand() / RAND_MAX - 0.5) ;
-	return now + dnow;
+	double dnow = ((double)rand() / RAND_MAX - 0.5) * 0.3;
+	return abs(now + dnow);
 }
 static pa update(pa now) {
-	pa ans;
-	ans.a = update_parameter(now.a);
-	ans.b = update_parameter(now.b);
-	ans.c = update_parameter(now.c);
+	pa ans = now;
+	ans.a = update_parameter(ans.a);
+	ans.b = update_parameter(ans.b);
+	ans.c = update_parameter(ans.b);
 	return ans;
 }
-static void Page_Rank(vector<Edge>* adj, vector<Edge>* antiadj, int numv, double* p, double a) {
+static void Page_Rank(vector<Edge>* adj, vector<Edge>* antiadj, int numv, double* b, double a) {
 	vector <Edge>new_Adj[maxV];
 	vector <Edge>new_Antiadj[maxV];
 	for (int i = 0; i < numv; i++) {
@@ -110,7 +110,7 @@ static void Page_Rank(vector<Edge>* adj, vector<Edge>* antiadj, int numv, double
 		for (int k = 0; k < antiadj[i].size(); k++)
 			pr += antiadj[i][k].weight;
 		pr *= a;
-		pr += p[i];
+		pr += b[i];
 		pr /= adj[i].size();
 		for (int j = 0; j < adj[i].size(); j++)
 		{

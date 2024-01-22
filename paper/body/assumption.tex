@@ -1,8 +1,10 @@
 \section{Assumptions and Justifications}
-\subsection{Assumptions}
-we would like to give the following assumptions://
 \begin{itemize}
-\item first
-\item second
+\item \textbf{\textit{Assumption 1}:The lengths of the edges provided in the data file are based on actual measurements or reliable data, rather than estimated values or simulated results.}\\
+\indent \textit{Explanation:}The data in the file consists of the latitude and longitude coordinates of different locations in Beijing, along with the directed distances between two points. The data has a high level of accuracy and provides a realistic simulation of real-world scenarios.
+\item \textbf{\textit{Assumption 2}:Historical paths can represent the path selection preferences of users over a relatively long period of time, and their trends are representative.}\\
+\indent \textit{Explanation:}Historical data is meaningful only when it reflects long-term and stable user preference.Representative selection tendencies can assist the model in better uncovering user preference information.
+\item \textbf{\textit{Assumption 3}:The region under consideration is a plane rather than a curved surface, and the straight-line distance between two locations is solely determined by their longitude and latitude.}\\
+\indent \textit{Explanation:}Because the straight-line distance between two points on a sphere cannot be directly calculated based on their longitude and latitude,We need to find a simplified way of calculation.However, in the given scenario where the area is relatively small, it is possible to approximate it as a plane and handle it accordingly.
 \end{itemize}
-\subsection{Justifications}
+

@@ -13,10 +13,8 @@ int main() {
     unordered_map<pair<int, int>, Edge, pair_hash> prmap;
     initpr(prmap);
 
-    pa now = { 5,1,1 };
-    cout << now.a << ' ' << now.b << ' ' << now.c << endl;
+    pa now = { 0.2,0.8,7 };
     now = SA(now, prmap, map, edges, vertices);
-
     //cout << SIM(map,edges) << endl;
 
     return 0;

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.16)  19 JAN 2024 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.16)  23 JAN 2024 00:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Latex模板-MCM2024/mcm_icm.tex
-(d:/Latex模板-MCM2024/mcm_icm.tex
+**d:/MCM2024训练赛/mcm_icm.tex
+(d:/MCM2024训练赛/mcm_icm.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (d:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -320,6 +320,25 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box54
 \@float@everytoks=\toks32
 \@floatcapt=\box55
+) (d:/texlive/2023/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip57
+\subfigcapskip=\skip58
+\subfigcaptopadj=\dimen175
+\subfigbottomskip=\skip59
+\subfigcapmargin=\dimen176
+\subfiglabelskip=\skip60
+\c@subfigure=\count300
+\c@lofdepth=\count301
+\c@subtable=\count302
+\c@lotdepth=\count303
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(d:/texlive/2023/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip61
+\subfig@bottom=\skip62
 ) (d:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (d:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
@@ -333,8 +352,8 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
  (d:/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen175
-\Gin@req@width=\dimen176
+\Gin@req@height=\dimen177
+\Gin@req@width=\dimen178
 ) (d:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (d:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -353,45 +372,46 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (d:/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip57
-\f@nch@O@elh=\skip58
-\f@nch@O@erh=\skip59
-\f@nch@O@olh=\skip60
-\f@nch@O@orh=\skip61
-\f@nch@O@elf=\skip62
-\f@nch@O@erf=\skip63
-\f@nch@O@olf=\skip64
-\f@nch@O@orf=\skip65
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
 )
-\c@theorem=\count300
-\c@definition=\count301
-LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 41.
+   defining Unicode char U+0300 (decimal 768)
+\c@theorem=\count304
+\c@definition=\count305
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 31.
  (d:/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 41.
+(Font)              scaled to size 12.0pt on input line 31.
  (./mcm_icm.aux)
 \openout1 = `mcm_icm.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -427,25 +447,25 @@ LaTeX Font Info:    ... okay on input line 41.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count302
-\c@mv@boldtabular=\count303
-Package hyperref Info: Link coloring OFF on input line 41.
+\c@mv@tabular=\count306
+\c@mv@boldtabular=\count307
+Package hyperref Info: Link coloring OFF on input line 31.
 (./mcm_icm.out) (./mcm_icm.out)
 \@outlinefile=\write3
 \openout3 = `mcm_icm.out'.
 
  (d:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count304
-\scratchdimen=\dimen177
+\scratchcounter=\count308
+\scratchdimen=\dimen179
 \scratchbox=\box56
-\nofMPsegments=\count305
-\nofMParguments=\count306
+\nofMPsegments=\count309
+\nofMParguments=\count310
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count307
-\MPscratchDim=\dimen178
-\MPnumerator=\count308
-\makeMPintoPDFobject=\count309
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen180
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
 \everyMPtoPDFconversion=\toks34
 ) (d:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -453,27 +473,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (d:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
  (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 51.
+(Font)              scaled to size 12.0pt on input line 41.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 51.
+(Font)              scaled to size 17.28pt on input line 41.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 58.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 70.
+(Font)              scaled to size 24.88pt on input line 45.
  [1
 
 {d:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 84.
+(Font)              scaled to size 17.28pt on input line 73.
  (./mcm_icm.toc)
 \tf@toc=\write4
 \openout4 = `mcm_icm.toc'.
@@ -486,25 +504,51 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.85 \newpage
-              [1
+[2
 
 ] (./body/introduction.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 2.
+(Font)              scaled to size 14.4pt on input line 4.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 2.
-) (./body/assumption.tex
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 5.
+(Font)              scaled to size 14.4pt on input line 4.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 14.
  (d:/texlive/2023/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
+(Font)              scaled to size 12.0pt on input line 14.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 14.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3{d:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+<核心思路.png, id=147, 896.367pt x 484.428pt>
+File: 核心思路.png Graphic file (type png)
+<use 核心思路.png>
+Package pdftex.def Info: 核心思路.png  used on input line 32.
+(pdftex.def)             Requested size: 341.42998pt x 256.08035pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.39     \item W
+                e calculated the weights of each edge and used two different... <./核心思路.png>]) (./body/assumption.tex
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 3.
 ) (./body/notations.tex) (./body/model.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -513,7 +557,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2{d:/texlive/2023/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]) (./body/testing.tex) (./body/strengths and weaknesses.tex) (./body/reference.tex
+[5]
+<example1题图.png, id=161, 562.1pt x 449.68pt>
+File: example1题图.png Graphic file (type png)
+<use example1题图.png>
+Package pdftex.def Info: example1题图.png  used on input line 11.
+(pdftex.def)             Requested size: 170.7155pt x 128.03662pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--13
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -521,14 +575,408 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3]
-LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 4.
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.23 \]
+        <./example1题图.png (PNG copy)>]
+<北京地图初始版.png, id=170, 1629.08624pt x 1331.97626pt>
+File: 北京地图初始版.png Graphic file (type png)
+<use 北京地图初始版.png>
+Package pdftex.def Info: 北京地图初始版.png  used on input line 58.
+(pdftex.def)             Requested size: 284.52263pt x 213.38477pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.61 \indent
+             We discovered that many points are located along the tracks of ...]
+<次数分布-总体.png, id=179, 462.528pt x 346.896pt>
+File: 次数分布-总体.png Graphic file (type png)
+<use 次数分布-总体.png>
+Package pdftex.def Info: 次数分布-总体.png  used on input line 67.
+(pdftex.def)             Requested size: 170.71628pt x 128.0372pt.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 67.
+<次数分布_局部.png, id=180, 462.528pt x 346.896pt>
+File: 次数分布_局部.png Graphic file (type png)
+<use 次数分布_局部.png>
+Package pdftex.def Info: 次数分布_局部.png  used on input line 69.
+(pdftex.def)             Requested size: 170.71628pt x 128.0372pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.74 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.74 
+      <./北京地图初始版.png (PNG copy)> <./次数分布-总体.png> <./次数分布_局部.png>]
+<dijkstra优化前.png, id=191, 317.68687pt x 200.75pt>
+File: dijkstra优化前.png Graphic file (type png)
+<use dijkstra优化前.png>
+Package pdftex.def Info: dijkstra优化前.png  used on input line 87.
+(pdftex.def)             Requested size: 227.62912pt x 170.72713pt.
+<dijkstra优化后.png, id=192, 320.69812pt x 199.24437pt>
+File: dijkstra优化后.png Graphic file (type png)
+<use dijkstra优化后.png>
+Package pdftex.def Info: dijkstra优化后.png  used on input line 89.
+(pdftex.def)             Requested size: 227.62874pt x 170.72357pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--91
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 97.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.0pt on input line 97.
+<Figure_1-1.png, id=198, 462.528pt x 346.896pt>
+File: Figure_1-1.png Graphic file (type png)
+<use Figure_1-1.png>
+Package pdftex.def Info: Figure_1-1.png  used on input line 113.
+(pdftex.def)             Requested size: 284.54124pt x 213.39534pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.116 \indent
+              According to Figure 6, we can draw the conclusion that the val... <./dijkstra优化前.png> <./dijkstra优化后.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.138 \]
+         <./Figure_1-1.png>]
+<SA1-1.png, id=216, 462.528pt x 346.896pt>
+File: SA1-1.png Graphic file (type png)
+<use SA1-1.png>
+Package pdftex.def Info: SA1-1.png  used on input line 146.
+(pdftex.def)             Requested size: 227.6217pt x 170.71628pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--148
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.156 \begin{equation*}
+                        <./SA1-1.png>]
+<PR分布-总体.png, id=223, 462.528pt x 346.896pt>
+File: PR分布-总体.png Graphic file (type png)
+<use PR分布-总体.png>
+Package pdftex.def Info: PR分布-总体.png  used on input line 170.
+(pdftex.def)             Requested size: 170.71628pt x 128.0372pt.
+<PR分布_局部.png, id=224, 462.528pt x 346.896pt>
+File: PR分布_局部.png Graphic file (type png)
+<use PR分布_局部.png>
+Package pdftex.def Info: PR分布_局部.png  used on input line 172.
+(pdftex.def)             Requested size: 170.71628pt x 128.0372pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.176 
+       <./PR分布-总体.png> <./PR分布_局部.png>]
+<PR与u的关系.png, id=238, 774.7344pt x 593.0958pt>
+File: PR与u的关系.png Graphic file (type png)
+<use PR与u的关系.png>
+Package pdftex.def Info: PR与u的关系.png  used on input line 209.
+(pdftex.def)             Requested size: 170.71399pt x 128.02895pt.
+<PR与v的关系.png, id=239, 774.7344pt x 593.0958pt>
+File: PR与v的关系.png Graphic file (type png)
+<use PR与v的关系.png>
+Package pdftex.def Info: PR与v的关系.png  used on input line 211.
+(pdftex.def)             Requested size: 170.71399pt x 128.02895pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+<10000左右点.png, id=244, 1109.14375pt x 944.52875pt>
+File: 10000左右点.png Graphic file (type png)
+<use 10000左右点.png>
+Package pdftex.def Info: 10000左右点.png  used on input line 218.
+(pdftex.def)             Requested size: 170.71388pt x 128.02472pt.
+<10000左右点对照.png, id=245, 751.80875pt x 634.37pt>
+File: 10000左右点对照.png Graphic file (type png)
+<use 10000左右点对照.png>
+Package pdftex.def Info: 10000左右点对照.png  used on input line 220.
+(pdftex.def)             Requested size: 170.70981pt x 128.03331pt.
+<北京地图.png, id=246, 1879.02pt x 1393.205pt>
+File: 北京地图.png Graphic file (type png)
+<use 北京地图.png>
+Package pdftex.def Info: 北京地图.png  used on input line 227.
+(pdftex.def)             Requested size: 227.62303pt x 170.7063pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.230 \indent
+              We discover a strong regularity in the distribution of the poi...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.230 \indent
+              We discover a strong regularity in the distribution of the poi... <./PR与u的关系.png> <./PR与v的关系.png> <./10000左右点.png (PNG copy)> <./10000左右点对照.png (PNG copy)>]
+<覆盖北京地图.png, id=259, 455.301pt x 341.3553pt>
+File: 覆盖北京地图.png Graphic file (type png)
+<use 覆盖北京地图.png>
+Package pdftex.def Info: 覆盖北京地图.png  used on input line 234.
+(pdftex.def)             Requested size: 227.62215pt x 170.71889pt.
+<SIM-c.png, id=260, 774.7344pt x 593.0958pt>
+File: SIM-c.png Graphic file (type png)
+<use SIM-c.png>
+Package pdftex.def Info: SIM-c.png  used on input line 242.
+(pdftex.def)             Requested size: 227.62259pt x 170.70828pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.245 \indent
+              From the Figure, we can observe that when the two parameters r...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.245 \indent
+              From the Figure, we can observe that when the two parameters r... <./北京地图.png (PNG copy)> <./覆盖北京地图.png>]
+
+LaTeX Warning: Command \textless invalid in math mode on input line 259.
+
+LaTeX Font Info:    Trying to load font information for OML+ntxtlf on input line 259.
+LaTeX Font Info:    No file OMLntxtlf.fd. on input line 259.
+
+LaTeX Font Warning: Font shape `OML/ntxtlf/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 259.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 259.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 260.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 260.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 261.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 261.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 262.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 262.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 263.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 263.
+
+<weight-length.png, id=268, 774.7344pt x 593.0958pt>
+File: weight-length.png Graphic file (type png)
+<use weight-length.png>
+Package pdftex.def Info: weight-length.png  used on input line 277.
+(pdftex.def)             Requested size: 227.62259pt x 170.70828pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.279 \end{figure}
+                   <./SIM-c.png>]
+<PR-length.png, id=276, 774.7344pt x 593.0958pt>
+File: PR-length.png Graphic file (type png)
+<use PR-length.png>
+Package pdftex.def Info: PR-length.png  used on input line 285.
+(pdftex.def)             Requested size: 170.71399pt x 128.02895pt.
+<PR-length 0 to 500.png, id=277, 774.7344pt x 593.0958pt>
+File: PR-length 0 to 500.png Graphic file (type png)
+<use PR-length 0 to 500.png>
+Package pdftex.def Info: PR-length 0 to 500.png  used on input line 287.
+(pdftex.def)             Requested size: 170.71399pt x 128.02895pt.
+) (./body/testing.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \section
+            {Testing}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \section
+            {Testing} <./weight-length.png> <./PR-length.png> <./PR-length 0 to 500.png>]
+<不同步长.png, id=289, 1232.9262pt x 729.927pt>
+File: 不同步长.png Graphic file (type png)
+<use 不同步长.png>
+Package pdftex.def Info: 不同步长.png  used on input line 6.
+(pdftex.def)             Requested size: 284.52652pt x 213.38863pt.
+<T.png, id=290, 1232.9262pt x 729.927pt>
+File: T.png Graphic file (type png)
+<use T.png>
+Package pdftex.def Info: T.png  used on input line 13.
+(pdftex.def)             Requested size: 227.61745pt x 170.70866pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16 \indent
+             We found that the group with a higher initial temperature calcu... <./不同步长.png>]) (./body/strengths and weaknesses.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.11     \item D
+                ue to the difficulty of convergence in high-dimensional spac...
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.11     \item D
+                ue to the difficulty of convergence in high-dimensional spac... <./T.png>]) (./body/reference.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]) (./body/appendices.tex
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 2.
  (d:/texlive/2023/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-) (./body/appendices.tex)
+(Font)              scaled to size 12.0pt on input line 2.
+
+Overfull \hbox (274.47601pt too wide) in paragraph at lines 34--34
+[]    \OT1/ntxtt/m/n/12 inline void Dijkstra(int s, int* d, int numv, vector<Edge>* adj, unordered_map<pair<int, int>, Edge, pair_hash>& map)[] 
+ []
+
+
+Overfull \hbox (79.17639pt too wide) in paragraph at lines 34--34
+[]        \OT1/ntxtt/m/n/12 priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> q;[] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -536,7 +984,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4]
+[22
+
+]
+Overfull \hbox (123.2763pt too wide) in paragraph at lines 65--65
+[]    \OT1/ntxtt/m/n/12 static double SIM(unordered_map<pair<int, int>, Edge, pair_hash>& map, vector<Edge>* edges) {[] 
+ []
+
+
+Overfull \hbox (142.17627pt too wide) in paragraph at lines 92--92
+[]    \OT1/ntxtt/m/n/12 static void Page_Rank(vector<Edge>* adj, vector<Edge>* antiadj, int numv, double* b, double a) {[] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -544,23 +1003,46 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5] (./mcm_icm.aux)
+[23]
+Overfull \hbox (570.57544pt too wide) in paragraph at lines 126--126
+[]\OT1/ntxtt/m/n/12 static pa SA(pa now, unordered_map<pair<int, int>, Edge, pair_hash>& pr, unordered_map<pair<int, int>, Edge, pair_hash>& length, vector<Edge>* edges, vector<Point> v) {[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25] (./mcm_icm.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `mcm_icm.out' has not changed.
-(rerunfilecheck)             Checksum: 96BF26BFF54E8C75FC65FDDDE88C8C71;2085.
+(rerunfilecheck)             Checksum: BCE2641469C5FB0574610D560865EDE4;4145.
  ) 
 Here is how much of TeX's memory you used:
- 12793 strings out of 476025
- 201557 string characters out of 5794015
- 1861382 words of memory out of 5000000
- 32972 multiletter control sequences out of 15000+600000
- 531295 words of font info for 74 fonts, out of 8000000 for 9000
+ 13238 strings out of 476025
+ 209091 string characters out of 5794015
+ 1867382 words of memory out of 5000000
+ 33314 multiletter control sequences out of 15000+600000
+ 536384 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,77p,327b,467s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on mcm_icm.pdf (6 pages, 123208 bytes).
+ 75i,12n,77p,1134b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on mcm_icm.pdf (25 pages, 11424190 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 142 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
